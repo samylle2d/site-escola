@@ -1,0 +1,60 @@
+/*
+Este seletor universal (*) remove as margens e preenchimentos padrão
+de todos os elementos da página. Isso é útil para garantir uma
+consistência visual e evitar inconsistências entre diferentes
+navegadores.
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+Esta regra de estilo define o estilo para a classe '.cabecalho':
+
+- O fundo é definido como uma cor de fundo #424E61 (um tom de azul escuro).
+- A cor do texto é definida como branca para contrastar com o fundo escuro.
+- Utiliza-se um layout flexível (display: flex) para alinhar os elementos
+  horizontalmente dentro do cabeçalho.
+- Os elementos são distribuídos uniformemente ao longo do eixo horizontal
+  com 'justify-content: space-around'.
+- 'align-items: center' alinha verticalmente os itens ao centro.
+- É aplicado um preenchimento de 24 pixels no topo e na base do cabeçalho
+  (padding: 24px 0).
+*/
+.cabecalho {
+    background-color: #424E61;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 24px 0;
+}
+
+/*
+Esta regra de estilo define o tamanho da imagem dentro da classe '.cabecalho-imagem':
+
+- A largura da imagem é definida como 20% da largura do seu contêiner pai.
+  Isso permite que a imagem ocupe 20% da largura disponível no cabeçalho,
+  mantendo-a responsiva.
+*/
+.cabecalho-imagem{
+    width: 20%;
+}
+
+/*
+Esta regra de estilo define o estilo para os itens da lista dentro da classe '.cabecalho-lista-item':
+
+- 'display: inline-block' faz com que os itens da lista se comportem como elementos de bloco
+  inline, permitindo que fiquem em linha uns com os outros, enquanto ainda é possível
+  definir propriedades de largura e altura para eles.
+- 'margin: 0 16px' define margens de 0 pixels nas partes superior e inferior e
+  16 pixels nas partes esquerda e direita dos itens da lista. Isso cria um espaçamento
+  entre os itens.
+- 'font-size: 24px' define o tamanho da fonte como 24 pixels para os itens da lista.
+*/
+.cabecalho-lista-item{
+    display: inline-block;
+    margin: 0 16px;
+    font-size: 24px;
+}
